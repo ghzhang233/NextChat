@@ -146,21 +146,21 @@ export enum GoogleSafetySettingsThreshold {
 }
 
 export enum ModelProvider {
-  // Stability = "Stability",
+  Stability = "Stability",
   GPT = "GPT",
   GeminiPro = "GeminiPro",
   Claude = "Claude",
-  // Ernie = "Ernie",
-  // Doubao = "Doubao",
-  // Qwen = "Qwen",
-  // Hunyuan = "Hunyuan",
-  // Moonshot = "Moonshot",
-  // Iflytek = "Iflytek",
+  Ernie = "Ernie",
+  Doubao = "Doubao",
+  Qwen = "Qwen",
+  Hunyuan = "Hunyuan",
+  Moonshot = "Moonshot",
+  Iflytek = "Iflytek",
   XAI = "XAI",
-  // ChatGLM = "ChatGLM",
-  // DeepSeek = "DeepSeek",
-  // SiliconFlow = "SiliconFlow",
-  // "302.AI" = "302.AI",
+  ChatGLM = "ChatGLM",
+  DeepSeek = "DeepSeek",
+  SiliconFlow = "SiliconFlow",
+  "302.AI" = "302.AI",
 }
 
 export const Stability = {
@@ -493,7 +493,8 @@ export const VISION_MODEL_REGEXES = [
   /o3/,
   /o4-mini/,
   /grok-4/i,
-  /gpt-5/
+  /gpt-5/,
+  /gpt-5.1/
 ];
 
 export const EXCLUDE_VISION_MODEL_REGEXES = [/claude-3-5-haiku-20241022/];
@@ -518,6 +519,8 @@ const openaiModels = [
   "gpt-4.1-nano-2025-04-14",
   "gpt-4.5-preview",
   "gpt-4.5-preview-2025-02-27",
+  "gpt-5.1",
+  "gpt-5.1-mini",
   "gpt-5-chat",
   "gpt-5-mini",
   "gpt-5-nano",
